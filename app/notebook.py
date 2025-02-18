@@ -23,3 +23,6 @@ class Note:
     def __str__(self) -> str:
         return f"Date: {self.creation_date}\n{self.title}\n{self.text}"
 
+class Notebook:
+    def __init__(self,notes):
+        self.notes:list[Note] =[]
