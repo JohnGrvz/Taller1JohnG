@@ -14,4 +14,8 @@ class Note:
         self.tags: list[str] = []
 
     def add_tag(self, tag: str):
-        self.tags.append(tag)
+        if self.tags.count(tag) < 1:
+            self.tags.append(tag)
+
+        else:
+            return "La etiqueta ya existe"
